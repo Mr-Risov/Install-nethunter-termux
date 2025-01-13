@@ -1,22 +1,24 @@
-# install-nethunter-termux
+# Install-nethunter-termux
 
-This script helps you install an older, stable version of Kali Linux Nethunter on Termux. The new Kali Linux Nethunter has a known issue (`dpkg` errors during tasks), and this script fixes that by installing a functional older version of Nethunter.
+This script helps you install an older, stable version of Kali Linux Nethunter on Termux. The latest version of Kali Linux Nethunter often encounters issues such as `dpkg` errors, and this script resolves them by installing a functional older version.
+
+---
 
 ## Why Use This Script?
 
-The latest version of Kali Linux Nethunter on Termux often throws errors during installation or while using `dpkg`, as shown below:
+The latest version of Kali Linux Nethunter on Termux throws errors during installation or while using `dpkg`, as shown below:
 
-### Error Example:
-- **dpkg Error in Latest Version**  
-  ![Error](error.jpeg)
+### **Error Example**
+![dpkg Error](https://i.ibb.co/4PKK5NP/IMG-20250113-102242.jpg)  
 
-To overcome these issues, this script installs a tested and stable older version of Kali Linux Nethunter.
+To avoid this, the script installs a stable older version of Nethunter that has been thoroughly tested.
 
 ---
 
 ## Requirements
 
-Make sure you have Termux installed on your device. This script is designed to work seamlessly within Termux.
+- **Termux** installed on your device.
+- At least **5GB of free storage**.
 
 ---
 
@@ -56,11 +58,14 @@ Make sure you have Termux installed on your device. This script is designed to w
 
 ## Installation Screenshots
 
-- **During Installation**:  
-  ![Installing](installing.jpeg)
+- **During Installation**  
+  ![Installing](https://i.ibb.co/N66PBjf/Screenshot-2025-01-13-10-12-34-945-com-termux.jpg)  
 
-- **After Installation**:  
-  ![Installed](Installed.jpeg)
+- **After Installation**  
+  ![Installed](https://i.ibb.co/QnbfryS/010-NH-Rootless-Installation-Start-s.png)
+
+- **Using kex**
+  ![kex](https://i.ibb.co/0hM4kFJ/020-NH-Rootless-Ke-X-s.png)
 
 ---
 
@@ -68,25 +73,25 @@ Make sure you have Termux installed on your device. This script is designed to w
 
 After successfully installing Nethunter, follow these steps to use it:
 
-1. Start Nethunter:
+1. **Start Nethunter:**
 
     ```bash
     nh
     ```
 
-2. Start the GUI with Kex:
+2. **Launch the GUI with Kex:**
 
     ```bash
     nh kex &
     ```
 
-3. Gain root access for administrative tasks:
+3. **Gain Root Access:**
 
     ```bash
     sudo su
     ```
 
-4. Set or update the Nethunter password:
+4. **Set or Update Password:**
 
     ```bash
     nh password
@@ -94,23 +99,22 @@ After successfully installing Nethunter, follow these steps to use it:
 
 ---
 
-## Common Errors in Latest Version and How This Script Fixes Them
+## Common Errors in Latest Version
 
-### 1. `dpkg` Errors
-- **Error Example:**  
-  ![Error Example](error.jpeg)  
-  This error often occurs when using the latest version of Nethunter. The script avoids this issue by installing a functional older version of Nethunter.
+### 1. **`dpkg` Errors**
+- **Error Example**:  
+  ![dpkg Error](https://i.ibb.co/4PKK5NP/IMG-20250113-102242.jpg)  
+  The error occurs due to compatibility issues in the latest version. This script resolves the issue by installing a stable version.
 
-### 2. Dependency Installation Issues
-- **Problem:** Some dependencies fail to install, causing the latest Nethunter version to break.
-- **Solution:** The stable version provided by this script includes all required dependencies pre-configured.
+### 2. **Dependency Issues**
+- Some dependencies fail to install in the latest version. The older version used in this script includes all necessary dependencies.
 
 ---
 
 ## Notes
 
-- Ensure you have at least 5GB of free storage before starting the installation.
-- If you encounter issues or need help, feel free to open an issue on this repository.
+- This script is intended for Termux users seeking a functional version of Kali Linux Nethunter.
+- If you face any issues, please open an issue on this repository.
 
 ---
 
